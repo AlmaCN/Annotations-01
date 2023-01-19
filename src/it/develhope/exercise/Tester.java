@@ -2,6 +2,7 @@ package it.develhope.exercise;
 
 public class Tester {
 
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
 
         /**
@@ -9,7 +10,6 @@ public class Tester {
          * dell'oggetto ho aggiuto un annotazione di SuppressWarnings che sopprimesse i messaggi di deprecato del
          * metodo printCarDetails
          */
-        @SuppressWarnings(value = "deprecated")
         Car audi = new Car("Audi", 100000);
         audi.printCarDetails();
         audi.getCarDetails();
